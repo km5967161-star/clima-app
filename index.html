@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App del Clima - API</title>
+
+    <title>App del Clima</title>
 
     <link rel="stylesheet" href="estilos.css">
-
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
 </head>
 
 <body>
 
-    <header>
-        <img src="img/clima.jpg" alt="Banner de la App del Clima" class="banner">
+<header>
 
-        <h1>🌤️ App del Clima</h1>
+    <img src="img/clima.jpg"
+         alt="Banner de la App del Clima"
+         class="banner">
 
-        <p>Consulta el clima en tiempo real de cualquier ciudad</p>
-    </header>
+    <h1>🌤️ App del Clima</h1>
 
-    <main>
+    <p>Consulta el clima de cualquier ciudad</p>
 
-        <form id="formulario" class="buscador">
+</header>
 
-            <input 
-                type="text" 
-                id="inputCiudad" 
-                placeholder="Escribe una ciudad..." 
-                required
-            >
 
-            <button type="submit">🔍 Consultar</button>
+<main>
 
-        </form>
+    <form id="formulario">
 
-        <div id="resultado" class="resultado"></div>
+        <input
+            type="text"
+            id="inputCiudad"
+            placeholder="Escribe una ciudad..."
+            required
+        >
 
-        <p id="estado"></p>
+        <button type="submit">
+            🔍 Consultar
+        </button>
 
-    </main>
+    </form>
 
-    <footer>
+    <button id="ubicacion">
+       Mi ubicación
+    </button>
 
-        <p>&copy; 2026 - App del Clima | Datos de OpenWeatherMap</p>
 
-        <p>🎨 Banner diseñado en Canva</p>
+    
+    <button id="tema">
+        Cambiar tema
+    </button>
 
-    </footer>
 
-    <script src="script.js"></script>
+    <div id="resultado" class="resultado"></div>
+
+    <p id="estado"></p>
+
+    
+    <section>
+
+        <h2> Historial</h2>
+
+        <div id="historial"></div>
+
+    </section>
+
+
+    
+    <section>
+
+        <h2>Pronóstico de 5 días</h2>
+
+        <div id="pronostico"></div>
+
+    </section>
+
+    <button id="whatsapp">
+        Compartir en WhatsApp
+    </button>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 - App del Clima
+    </p>
+
+    <p>
+        Datos de OpenWeatherMap
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
